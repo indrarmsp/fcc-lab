@@ -1,35 +1,74 @@
 <!DOCTYPE html>
+<!-- Declares the document type and HTML version (HTML5) -->
+
 <html lang="en">
+<!-- Root element of the HTML document, language set to English -->
+
 <head>
   <meta charset="UTF-8">
+  <!-- Sets character encoding to UTF-8 (supports most characters and symbols) -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page responsive on mobile devices by controlling layout scaling -->
+
   <title>Working with the HTML Video Element</title>
+  <!-- Title shown in browser tab -->
 </head>
+
 <body>
+  <!-- Main content of the webpage -->
+
   <h1>Working with the HTML Video Element</h1>
+  <!-- Page heading -->
+
   <video
     width="640"
+    <!-- Sets the width of the video player in pixels -->
+
     loop
+    <!-- Automatically restarts the video after it finishes -->
+
     controls
+    <!-- Displays built-in video controls (play, pause, volume, etc.) -->
+
     muted
+    <!-- Starts the video with no sound (often required for autoplay in browsers) -->
+
     poster="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
+    <!-- Image shown before the video starts playing -->
   >
+    <!-- The <video> element is used to embed video content -->
+
     <source
       src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
       type="video/mp4"
     >
+    <!-- Primary video source (MP4 is widely supported by most browsers) -->
+
     <source
       src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm"
       type="video/webm"
     >
+    <!-- Alternative format (WebM) for better compatibility/performance in some browsers -->
+
     <source
       src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg"
       type="video/ogg"
     >
+    <!-- OGG format as another fallback option -->
+
     <source
       src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.mov"
       type="video/quicktime"
     >
+    <!-- MOV (QuickTime) format, less commonly supported in browsers -->
+
+    <!-- Browser will use the first supported format in the list above -->
   </video>
+
+  <!-- Tip:
+       Always provide multiple source formats to ensure compatibility across different browsers.
+       The browser selects the first format it can play. -->
+
 </body>
 </html>

@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Defines character encoding for proper text display -->
   <meta charset="UTF-8">
+  
+  <!-- Title shown in the browser tab -->
   <title>Media Page</title>
 </head>
 <body>
 
+  <!-- Main heading of the page (only one h1 is allowed) -->
   <h1>Media Player Page</h1>
 
+  <!-- First section: contains the video player -->
   <section>
+    
+    <!-- Title describing the video -->
     <h2>Learning the Map Method</h2>
+    
+    <!-- 
+      Video element:
+      - controls: adds play, pause, volume UI
+      - width="640": required width for the test
+    -->
     <video controls width="640">
+      
+      <!-- 
+        Source of the video:
+        - src: link to the video file
+        - type: specifies file format (must match .mp4)
+      -->
       <source 
         src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" 
         type="video/mp4">
+      
+      <!-- Fallback text if browser does not support video -->
+      Your browser does not support the video tag.
     </video>
+
   </section>
 
+  <!-- Second section: contains the audio player -->
   <section>
+    
+    <!-- Title describing the audio -->
     <h2>Enjoy Some Music</h2>
+    
+    <!-- 
+      Audio element:
+      - controls: shows audio player controls
+      - loop: repeats the audio automatically
+      - src: link to the audio file
+    -->
     <audio 
       controls 
       loop 
       src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3">
+      
+      <!-- Fallback text if browser does not support audio -->
+      Your browser does not support the audio element.
     </audio>
+
   </section>
 
 </body>

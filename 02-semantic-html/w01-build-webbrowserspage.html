@@ -1,27 +1,95 @@
 <!DOCTYPE html> 
+<!-- 
+    Declares the document type and version of HTML.
+    <!DOCTYPE html> specifies that this document uses HTML5.
+-->
+
 <html lang="en"> 
+<!-- 
+    The root element of the HTML document.
+    lang="en" specifies that the primary language of the document is English.
+-->
+
     <head> 
+        <!-- 
+            The <head> element contains meta-information about the document,
+            such as character encoding, title, and viewport settings.
+        -->
+
         <meta charset="UTF-8"> 
+        <!-- 
+            Sets the character encoding for the document to UTF-8,
+            which supports most characters from all languages.
+        -->
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- 
+            Ensures the page is responsive on mobile devices.
+            width=device-width sets the page width to the device's screen width.
+            initial-scale=1.0 sets the initial zoom level.
+        -->
+
         <title>List of Browsers and Descriptions</title> 
+        <!-- 
+            The title of the webpage that appears in the browser tab.
+        -->
     </head> 
+
     <body> 
+        <!-- 
+            The <body> element contains all the content displayed on the webpage.
+        -->
+
         <h1>List of Major Web Browsers</h1> 
+        <!-- 
+            Main heading of the page (level 1 heading).
+            Typically, there should only be one <h1> per page for SEO and accessibility.
+        -->
+
         <dl>
+        <!-- 
+            <dl> stands for "description list".
+            It is used to define a list of terms and their corresponding descriptions.
+        -->
+
             <dt>Google Chrome</dt>
+            <!-- 
+                <dt> defines a term in the description list.
+                Here, the term is "Google Chrome".
+            -->
+
             <dd>This is a free web browser developed by Google and first released in 2008.</dd>
+            <!-- 
+                <dd> defines the description of the preceding <dt>.
+                Provides additional information about Google Chrome.
+            -->
 
             <dt>Firefox</dt>
             <dd>This is a free web browser developed by the Mozilla Corporation and first created in 2004.</dd>
+            <!-- 
+                Firefox entry: term and description.
+            -->
 
             <dt>Safari</dt>
             <dd>This browser was developed by Apple and is the default browser for iPhone, iPad and Mac devices.</dd>
+            <!-- 
+                Safari entry: term and description.
+            -->
 
             <dt>Brave</dt>
             <dd>This is a free web browser first released in 2016 that is based on the Chromium web browser.</dd>
+            <!-- 
+                Brave entry: term and description.
+            -->
 
             <dt>Arc</dt>
             <dd>This is a free Chromium based web browser first released in 2023 by The Browser Company.</dd>
+            <!-- 
+                Arc entry: term and description.
+            -->
+
         </dl>
+        <!-- End of description list -->
+
     </body> 
 </html>

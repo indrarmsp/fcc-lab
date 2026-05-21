@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Video player page -->
+
+<html lang="en">
+  <!-- Root element and language declaration -->
+
+  <head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with the HTML Video Element</title>
+    <!-- Browser tab title -->
+  </head>
+
+  <body>
+    <!-- Visible content -->
+
+    <h1>Working with the HTML Video Element</h1>
+    <!-- Main page heading -->
+
+    <video
+      width="640"
+      loop
+      controls
+      muted
+      poster="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
+    >
+      <!-- Video element with fallback sources -->
+
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+        type="video/mp4"
+      />
+      <!-- MP4 source -->
+
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm"
+        type="video/webm"
+      />
+      <!-- WebM source -->
+
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg"
+        type="video/ogg"
+      />
+      <!-- OGG source -->
+
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.mov"
+        type="video/quicktime"
+      />
+      <!-- MOV source -->
+    </video>
+
+    <!-- The browser uses the first playable source. -->
+  </body>
+</html>
